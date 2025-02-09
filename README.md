@@ -25,10 +25,9 @@ The system provides an intuitive interface for adding students, organizing them 
 git clone https://github.com/omar-920/mrmanager.git
 cd mrmanager
 ```
-https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/add%20student.png
-
-![Add students Screenshot](https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/add%20student.png)
+![login Screenshot](https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/teacherlogin.png)
 ![groups Screenshot](https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/groups.png)
+![Add students Screenshot](https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/add%20student.png)
 ![groupsSessions Screenshot](https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/groupssessions.png)
 ![groupsStudents Screenshot](https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/groupsstudents.png)
 ![payments Screenshot](https://raw.githubusercontent.com/omar-920/mrmanager/refs/heads/main/mrmanagerpics/payments.png)
