@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "615b0f27dd95e80a7164358e4e7f6a4b",
+=======
+    "content-hash": "3c99abfc2dd8f2a7ea4a29486d4e60f9",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
     "packages": [
         {
             "name": "brick/math",
@@ -970,6 +974,7 @@
         },
         {
             "name": "guzzlehttp/uri-template",
+<<<<<<< HEAD
             "version": "v1.0.3",
             "source": {
                 "type": "git",
@@ -980,6 +985,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/guzzle/uri-template/zipball/ecea8feef63bd4fef1f037ecb288386999ecc11c",
                 "reference": "ecea8feef63bd4fef1f037ecb288386999ecc11c",
+=======
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/uri-template.git",
+                "reference": "30e286560c137526eccd4ce21b2de477ab0676d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/uri-template/zipball/30e286560c137526eccd4ce21b2de477ab0676d2",
+                "reference": "30e286560c137526eccd4ce21b2de477ab0676d2",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -1036,7 +1053,11 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/uri-template/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/guzzle/uri-template/tree/v1.0.3"
+=======
+                "source": "https://github.com/guzzle/uri-template/tree/v1.0.4"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -1052,6 +1073,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
@@ -1070,6 +1092,26 @@
             },
             "require": {
                 "brick/math": "^0.9.3|^0.10.2|^0.11|^0.12",
+=======
+            "time": "2025-02-03T10:55:03+00:00"
+        },
+        {
+            "name": "laravel/framework",
+            "version": "v12.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "d99e2385a6d4324782d52f4423891966425641be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d99e2385a6d4324782d52f4423891966425641be",
+                "reference": "d99e2385a6d4324782d52f4423891966425641be",
+                "shasum": ""
+            },
+            "require": {
+                "brick/math": "^0.11|^0.12",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "composer-runtime-api": "^2.2",
                 "doctrine/inflector": "^2.0.5",
                 "dragonmantank/cron-expression": "^3.4",
@@ -1084,20 +1126,29 @@
                 "fruitcake/php-cors": "^1.3",
                 "guzzlehttp/guzzle": "^7.8.2",
                 "guzzlehttp/uri-template": "^1.0",
+<<<<<<< HEAD
                 "laravel/prompts": "^0.1.18|^0.2.0|^0.3.0",
+=======
+                "laravel/prompts": "^0.3.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "laravel/serializable-closure": "^1.3|^2.0",
                 "league/commonmark": "^2.6",
                 "league/flysystem": "^3.25.1",
                 "league/flysystem-local": "^3.25.1",
                 "league/uri": "^7.5.1",
                 "monolog/monolog": "^3.0",
+<<<<<<< HEAD
                 "nesbot/carbon": "^2.72.2|^3.4",
+=======
+                "nesbot/carbon": "^3.8.4",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "nunomaduro/termwind": "^2.0",
                 "php": "^8.2",
                 "psr/container": "^1.1.1|^2.0.1",
                 "psr/log": "^1.0|^2.0|^3.0",
                 "psr/simple-cache": "^1.0|^2.0|^3.0",
                 "ramsey/uuid": "^4.7",
+<<<<<<< HEAD
                 "symfony/console": "^7.0.3",
                 "symfony/error-handler": "^7.0.3",
                 "symfony/finder": "^7.0.3",
@@ -1110,6 +1161,20 @@
                 "symfony/routing": "^7.0.3",
                 "symfony/uid": "^7.0.3",
                 "symfony/var-dumper": "^7.0.3",
+=======
+                "symfony/console": "^7.2.0",
+                "symfony/error-handler": "^7.2.0",
+                "symfony/finder": "^7.2.0",
+                "symfony/http-foundation": "^7.2.0",
+                "symfony/http-kernel": "^7.2.0",
+                "symfony/mailer": "^7.2.0",
+                "symfony/mime": "^7.2.0",
+                "symfony/polyfill-php83": "^1.31",
+                "symfony/process": "^7.2.0",
+                "symfony/routing": "^7.2.0",
+                "symfony/uid": "^7.2.0",
+                "symfony/var-dumper": "^7.2.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "tijsverkoyen/css-to-inline-styles": "^2.2.5",
                 "vlucas/phpdotenv": "^5.6.1",
                 "voku/portable-ascii": "^2.0.2"
@@ -1166,12 +1231,17 @@
                 "fakerphp/faker": "^1.24",
                 "guzzlehttp/promises": "^2.0.3",
                 "guzzlehttp/psr7": "^2.4",
+<<<<<<< HEAD
+=======
+                "laravel/pint": "^1.18",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "league/flysystem-aws-s3-v3": "^3.25.1",
                 "league/flysystem-ftp": "^3.25.1",
                 "league/flysystem-path-prefixing": "^3.25.1",
                 "league/flysystem-read-only": "^3.25.1",
                 "league/flysystem-sftp-v3": "^3.25.1",
                 "mockery/mockery": "^1.6.10",
+<<<<<<< HEAD
                 "orchestra/testbench-core": "^9.6",
                 "pda/pheanstalk": "^5.0.6",
                 "php-http/discovery": "^1.15",
@@ -1183,6 +1253,19 @@
                 "symfony/http-client": "^7.0.3",
                 "symfony/psr-http-message-bridge": "^7.0.3",
                 "symfony/translation": "^7.0.3"
+=======
+                "orchestra/testbench-core": "^10.0",
+                "pda/pheanstalk": "^5.0.6",
+                "php-http/discovery": "^1.15",
+                "phpstan/phpstan": "^2.0",
+                "phpunit/phpunit": "^10.5.35|^11.5.3|^12.0.1",
+                "predis/predis": "^2.3",
+                "resend/resend-php": "^0.10.0",
+                "symfony/cache": "^7.2.0",
+                "symfony/http-client": "^7.2.0",
+                "symfony/psr-http-message-bridge": "^7.2.0",
+                "symfony/translation": "^7.2.0"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "suggest": {
                 "ably/ably-php": "Required to use the Ably broadcast driver (^1.0).",
@@ -1208,22 +1291,39 @@
                 "mockery/mockery": "Required to use mocking (^1.6).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (^5.0).",
                 "php-http/discovery": "Required to use PSR-7 bridging features (^1.15).",
+<<<<<<< HEAD
                 "phpunit/phpunit": "Required to use assertions and run tests (^10.5|^11.0).",
+=======
+                "phpunit/phpunit": "Required to use assertions and run tests (^10.5.35|^11.5.3|^12.0.1).",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "predis/predis": "Required to use the predis connector (^2.3).",
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^6.0|^7.0).",
                 "resend/resend-php": "Required to enable support for the Resend mail transport (^0.10.0).",
+<<<<<<< HEAD
                 "symfony/cache": "Required to PSR-6 cache bridge (^7.0).",
                 "symfony/filesystem": "Required to enable support for relative symbolic links (^7.0).",
                 "symfony/http-client": "Required to enable support for the Symfony API mail transports (^7.0).",
                 "symfony/mailgun-mailer": "Required to enable support for the Mailgun mail transport (^7.0).",
                 "symfony/postmark-mailer": "Required to enable support for the Postmark mail transport (^7.0).",
                 "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^7.0)."
+=======
+                "symfony/cache": "Required to PSR-6 cache bridge (^7.2).",
+                "symfony/filesystem": "Required to enable support for relative symbolic links (^7.2).",
+                "symfony/http-client": "Required to enable support for the Symfony API mail transports (^7.2).",
+                "symfony/mailgun-mailer": "Required to enable support for the Mailgun mail transport (^7.2).",
+                "symfony/postmark-mailer": "Required to enable support for the Postmark mail transport (^7.2).",
+                "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^7.2)."
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "11.x-dev"
+=======
+                    "dev-master": "12.x-dev"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 }
             },
             "autoload": {
@@ -1266,6 +1366,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+<<<<<<< HEAD
             "time": "2025-01-21T15:02:43+00:00"
         },
         {
@@ -1280,6 +1381,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/prompts/zipball/749395fcd5f8f7530fe1f00dfa84eb22c83d94ea",
                 "reference": "749395fcd5f8f7530fe1f00dfa84eb22c83d94ea",
+=======
+            "time": "2025-02-24T13:31:23+00:00"
+        },
+        {
+            "name": "laravel/prompts",
+            "version": "v0.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/prompts.git",
+                "reference": "57b8f7efe40333cdb925700891c7d7465325d3b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/57b8f7efe40333cdb925700891c7d7465325d3b1",
+                "reference": "57b8f7efe40333cdb925700891c7d7465325d3b1",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -1293,7 +1410,11 @@
                 "laravel/framework": ">=10.17.0 <10.25.0"
             },
             "require-dev": {
+<<<<<<< HEAD
                 "illuminate/collections": "^10.0|^11.0",
+=======
+                "illuminate/collections": "^10.0|^11.0|^12.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "mockery/mockery": "^1.5",
                 "pestphp/pest": "^2.3|^3.4",
                 "phpstan/phpstan": "^1.11",
@@ -1323,6 +1444,7 @@
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/laravel/prompts/tree/v0.3.3"
             },
             "time": "2024-12-30T15:53:31+00:00"
@@ -1339,22 +1461,53 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sanctum/zipball/698064236a46df016e64a7eb059b1414e0b281df",
                 "reference": "698064236a46df016e64a7eb059b1414e0b281df",
+=======
+                "source": "https://github.com/laravel/prompts/tree/v0.3.5"
+            },
+            "time": "2025-02-11T13:34:40+00:00"
+        },
+        {
+            "name": "laravel/sanctum",
+            "version": "v4.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sanctum.git",
+                "reference": "ec1dd9ddb2ab370f79dfe724a101856e0963f43c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/ec1dd9ddb2ab370f79dfe724a101856e0963f43c",
+                "reference": "ec1dd9ddb2ab370f79dfe724a101856e0963f43c",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
+<<<<<<< HEAD
                 "illuminate/console": "^11.0",
                 "illuminate/contracts": "^11.0",
                 "illuminate/database": "^11.0",
                 "illuminate/support": "^11.0",
+=======
+                "illuminate/console": "^11.0|^12.0",
+                "illuminate/contracts": "^11.0|^12.0",
+                "illuminate/database": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "php": "^8.2",
                 "symfony/console": "^7.0"
             },
             "require-dev": {
                 "mockery/mockery": "^1.6",
+<<<<<<< HEAD
                 "orchestra/testbench": "^9.0",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^10.5"
+=======
+                "orchestra/testbench": "^9.0|^10.0",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^11.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "type": "library",
             "extra": {
@@ -1389,6 +1542,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
+<<<<<<< HEAD
             "time": "2024-12-11T16:40:21+00:00"
         },
         {
@@ -1403,15 +1557,37 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/613b2d4998f85564d40497e05e89cb6d9bd1cbe8",
                 "reference": "613b2d4998f85564d40497e05e89cb6d9bd1cbe8",
+=======
+            "time": "2025-01-26T19:34:36+00:00"
+        },
+        {
+            "name": "laravel/serializable-closure",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/serializable-closure.git",
+                "reference": "f379c13663245f7aa4512a7869f62eb14095f23f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/f379c13663245f7aa4512a7869f62eb14095f23f",
+                "reference": "f379c13663245f7aa4512a7869f62eb14095f23f",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
                 "php": "^8.1"
             },
             "require-dev": {
+<<<<<<< HEAD
                 "illuminate/support": "^10.0|^11.0",
                 "nesbot/carbon": "^2.67|^3.0",
                 "pestphp/pest": "^2.36",
+=======
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "nesbot/carbon": "^2.67|^3.0",
+                "pestphp/pest": "^2.36|^3.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "phpstan/phpstan": "^2.0",
                 "symfony/var-dumper": "^6.2.0|^7.0.0"
             },
@@ -1450,6 +1626,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
+<<<<<<< HEAD
             "time": "2024-12-16T15:26:28+00:00"
         },
         {
@@ -1470,6 +1647,28 @@
                 "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
                 "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
                 "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+=======
+            "time": "2025-02-11T15:03:05+00:00"
+        },
+        {
+            "name": "laravel/tinker",
+            "version": "v2.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/tinker.git",
+                "reference": "22177cc71807d38f2810c6204d8f7183d88a57d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/22177cc71807d38f2810c6204d8f7183d88a57d3",
+                "reference": "22177cc71807d38f2810c6204d8f7183d88a57d3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "php": "^7.2.5|^8.0",
                 "psy/psysh": "^0.11.1|^0.12.0",
                 "symfony/var-dumper": "^4.3.4|^5.0|^6.0|^7.0"
@@ -1477,10 +1676,17 @@
             "require-dev": {
                 "mockery/mockery": "~1.3.3|^1.4.2",
                 "phpstan/phpstan": "^1.10",
+<<<<<<< HEAD
                 "phpunit/phpunit": "^8.5.8|^9.3.3"
             },
             "suggest": {
                 "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0|^9.0|^10.0|^11.0)."
+=======
+                "phpunit/phpunit": "^8.5.8|^9.3.3|^10.0"
+            },
+            "suggest": {
+                "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0)."
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "type": "library",
             "extra": {
@@ -1514,9 +1720,15 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/laravel/tinker/tree/v2.10.0"
             },
             "time": "2024-09-23T13:32:56+00:00"
+=======
+                "source": "https://github.com/laravel/tinker/tree/v2.10.1"
+            },
+            "time": "2025-01-27T14:24:01+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "league/commonmark",
@@ -2174,6 +2386,7 @@
         },
         {
             "name": "nesbot/carbon",
+<<<<<<< HEAD
             "version": "3.8.4",
             "source": {
                 "type": "git",
@@ -2184,6 +2397,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/129700ed449b1f02d70272d2ac802357c8c30c58",
                 "reference": "129700ed449b1f02d70272d2ac802357c8c30c58",
+=======
+            "version": "3.8.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CarbonPHP/carbon.git",
+                "reference": "ff2f20cf83bd4d503720632ce8a426dc747bf7fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/ff2f20cf83bd4d503720632ce8a426dc747bf7fd",
+                "reference": "ff2f20cf83bd4d503720632ce8a426dc747bf7fd",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -2259,8 +2484,13 @@
             ],
             "support": {
                 "docs": "https://carbon.nesbot.com/docs",
+<<<<<<< HEAD
                 "issues": "https://github.com/briannesbitt/Carbon/issues",
                 "source": "https://github.com/briannesbitt/Carbon"
+=======
+                "issues": "https://github.com/CarbonPHP/carbon/issues",
+                "source": "https://github.com/CarbonPHP/carbon"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -2276,7 +2506,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-12-27T09:25:35+00:00"
+=======
+            "time": "2025-02-20T17:33:38+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "nette/schema",
@@ -3663,6 +3897,7 @@
         },
         {
             "name": "symfony/error-handler",
+<<<<<<< HEAD
             "version": "v7.2.1",
             "source": {
                 "type": "git",
@@ -3673,6 +3908,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/error-handler/zipball/6150b89186573046167796fa5f3f76601d5145f8",
                 "reference": "6150b89186573046167796fa5f3f76601d5145f8",
+=======
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/error-handler.git",
+                "reference": "959a74d044a6db21f4caa6d695648dcb5584cb49"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/error-handler/zipball/959a74d044a6db21f4caa6d695648dcb5584cb49",
+                "reference": "959a74d044a6db21f4caa6d695648dcb5584cb49",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -3718,7 +3965,11 @@
             "description": "Provides tools to manage errors and ease debugging PHP code",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/error-handler/tree/v7.2.1"
+=======
+                "source": "https://github.com/symfony/error-handler/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -3734,7 +3985,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-12-07T08:50:44+00:00"
+=======
+            "time": "2025-01-07T09:39:55+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3958,6 +4213,7 @@
         },
         {
             "name": "symfony/http-foundation",
+<<<<<<< HEAD
             "version": "v7.2.2",
             "source": {
                 "type": "git",
@@ -3968,6 +4224,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-foundation/zipball/62d1a43796ca3fea3f83a8470dfe63a4af3bc588",
                 "reference": "62d1a43796ca3fea3f83a8470dfe63a4af3bc588",
+=======
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "ee1b504b8926198be89d05e5b6fc4c3810c090f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/ee1b504b8926198be89d05e5b6fc4c3810c090f0",
+                "reference": "ee1b504b8926198be89d05e5b6fc4c3810c090f0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -4016,7 +4284,11 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-foundation/tree/v7.2.2"
+=======
+                "source": "https://github.com/symfony/http-foundation/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -4032,6 +4304,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-12-30T19:00:17+00:00"
         },
         {
@@ -4046,6 +4319,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/http-kernel/zipball/3c432966bd8c7ec7429663105f5a02d7e75b4306",
                 "reference": "3c432966bd8c7ec7429663105f5a02d7e75b4306",
+=======
+            "time": "2025-01-17T10:56:55+00:00"
+        },
+        {
+            "name": "symfony/http-kernel",
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-kernel.git",
+                "reference": "caae9807f8e25a9b43ce8cc6fafab6cf91f0cc9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/caae9807f8e25a9b43ce8cc6fafab6cf91f0cc9b",
+                "reference": "caae9807f8e25a9b43ce8cc6fafab6cf91f0cc9b",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -4130,7 +4419,11 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/http-kernel/tree/v7.2.2"
+=======
+                "source": "https://github.com/symfony/http-kernel/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -4146,6 +4439,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-12-31T14:59:40+00:00"
         },
         {
@@ -4160,6 +4454,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/mailer/zipball/e4d358702fb66e4c8a2af08e90e7271a62de39cc",
                 "reference": "e4d358702fb66e4c8a2af08e90e7271a62de39cc",
+=======
+            "time": "2025-01-29T07:40:13+00:00"
+        },
+        {
+            "name": "symfony/mailer",
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mailer.git",
+                "reference": "f3871b182c44997cf039f3b462af4a48fb85f9d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/f3871b182c44997cf039f3b462af4a48fb85f9d3",
+                "reference": "f3871b182c44997cf039f3b462af4a48fb85f9d3",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -4210,7 +4520,11 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/mailer/tree/v7.2.0"
+=======
+                "source": "https://github.com/symfony/mailer/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -4226,6 +4540,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-11-25T15:21:05+00:00"
         },
         {
@@ -4240,6 +4555,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/mime/zipball/7f9617fcf15cb61be30f8b252695ed5e2bfac283",
                 "reference": "7f9617fcf15cb61be30f8b252695ed5e2bfac283",
+=======
+            "time": "2025-01-27T11:08:17+00:00"
+        },
+        {
+            "name": "symfony/mime",
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mime.git",
+                "reference": "2fc3b4bd67e4747e45195bc4c98bea4628476204"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/2fc3b4bd67e4747e45195bc4c98bea4628476204",
+                "reference": "2fc3b4bd67e4747e45195bc4c98bea4628476204",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -4294,7 +4625,11 @@
                 "mime-type"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/mime/tree/v7.2.1"
+=======
+                "source": "https://github.com/symfony/mime/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -4310,7 +4645,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-12-07T08:50:44+00:00"
+=======
+            "time": "2025-01-27T11:08:17+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -5011,6 +5350,7 @@
         },
         {
             "name": "symfony/routing",
+<<<<<<< HEAD
             "version": "v7.2.0",
             "source": {
                 "type": "git",
@@ -5021,6 +5361,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/routing/zipball/e10a2450fa957af6c448b9b93c9010a4e4c0725e",
                 "reference": "e10a2450fa957af6c448b9b93c9010a4e4c0725e",
+=======
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/routing.git",
+                "reference": "ee9a67edc6baa33e5fae662f94f91fd262930996"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/ee9a67edc6baa33e5fae662f94f91fd262930996",
+                "reference": "ee9a67edc6baa33e5fae662f94f91fd262930996",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -5072,7 +5424,11 @@
                 "url"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/routing/tree/v7.2.0"
+=======
+                "source": "https://github.com/symfony/routing/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -5088,7 +5444,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-11-25T11:08:51+00:00"
+=======
+            "time": "2025-01-17T10:56:55+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "symfony/service-contracts",
@@ -5509,6 +5869,7 @@
         },
         {
             "name": "symfony/var-dumper",
+<<<<<<< HEAD
             "version": "v7.2.0",
             "source": {
                 "type": "git",
@@ -5519,6 +5880,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c6a22929407dec8765d6e2b6ff85b800b245879c",
                 "reference": "c6a22929407dec8765d6e2b6ff85b800b245879c",
+=======
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "82b478c69745d8878eb60f9a049a4d584996f73a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/82b478c69745d8878eb60f9a049a4d584996f73a",
+                "reference": "82b478c69745d8878eb60f9a049a4d584996f73a",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -5572,7 +5945,11 @@
                 "dump"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/var-dumper/tree/v7.2.0"
+=======
+                "source": "https://github.com/symfony/var-dumper/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -5588,7 +5965,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-11-08T15:48:14+00:00"
+=======
+            "time": "2025-01-17T11:39:41+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
@@ -6127,6 +6508,7 @@
         },
         {
             "name": "filp/whoops",
+<<<<<<< HEAD
             "version": "2.16.0",
             "source": {
                 "type": "git",
@@ -6137,6 +6519,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filp/whoops/zipball/befcdc0e5dce67252aa6322d82424be928214fa2",
                 "reference": "befcdc0e5dce67252aa6322d82424be928214fa2",
+=======
+            "version": "2.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "075bc0c26631110584175de6523ab3f1652eb28e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/075bc0c26631110584175de6523ab3f1652eb28e",
+                "reference": "075bc0c26631110584175de6523ab3f1652eb28e",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -6186,7 +6580,11 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/filp/whoops/tree/2.16.0"
+=======
+                "source": "https://github.com/filp/whoops/tree/2.17.0"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -6194,7 +6592,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-09-25T12:00:00+00:00"
+=======
+            "time": "2025-01-25T12:00:00+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -6308,6 +6710,7 @@
         },
         {
             "name": "laravel/pail",
+<<<<<<< HEAD
             "version": "v1.2.1",
             "source": {
                 "type": "git",
@@ -6318,25 +6721,53 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/pail/zipball/353ac12134b98e2e7c3333d916bd3e523931e583",
                 "reference": "353ac12134b98e2e7c3333d916bd3e523931e583",
+=======
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pail.git",
+                "reference": "f31f4980f52be17c4667f3eafe034e6826787db2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pail/zipball/f31f4980f52be17c4667f3eafe034e6826787db2",
+                "reference": "f31f4980f52be17c4667f3eafe034e6826787db2",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
+<<<<<<< HEAD
                 "illuminate/console": "^10.24|^11.0",
                 "illuminate/contracts": "^10.24|^11.0",
                 "illuminate/log": "^10.24|^11.0",
                 "illuminate/process": "^10.24|^11.0",
                 "illuminate/support": "^10.24|^11.0",
+=======
+                "illuminate/console": "^10.24|^11.0|^12.0",
+                "illuminate/contracts": "^10.24|^11.0|^12.0",
+                "illuminate/log": "^10.24|^11.0|^12.0",
+                "illuminate/process": "^10.24|^11.0|^12.0",
+                "illuminate/support": "^10.24|^11.0|^12.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "nunomaduro/termwind": "^1.15|^2.0",
                 "php": "^8.2",
                 "symfony/console": "^6.0|^7.0"
             },
             "require-dev": {
+<<<<<<< HEAD
                 "laravel/framework": "^10.24|^11.0",
                 "laravel/pint": "^1.13",
                 "orchestra/testbench-core": "^8.12|^9.0",
                 "pestphp/pest": "^2.20",
                 "pestphp/pest-plugin-type-coverage": "^2.3",
+=======
+                "laravel/framework": "^10.24|^11.0|^12.0",
+                "laravel/pint": "^1.13",
+                "orchestra/testbench-core": "^8.13|^9.0|^10.0",
+                "pestphp/pest": "^2.20|^3.0",
+                "pestphp/pest-plugin-type-coverage": "^2.3|^3.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "phpstan/phpstan": "^1.10",
                 "symfony/var-dumper": "^6.3|^7.0"
             },
@@ -6382,6 +6813,7 @@
                 "issues": "https://github.com/laravel/pail/issues",
                 "source": "https://github.com/laravel/pail"
             },
+<<<<<<< HEAD
             "time": "2024-10-23T12:56:23+00:00"
         },
         {
@@ -6396,6 +6828,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/pint/zipball/53072e8ea22213a7ed168a8a15b96fbb8b82d44b",
                 "reference": "53072e8ea22213a7ed168a8a15b96fbb8b82d44b",
+=======
+            "time": "2025-01-28T15:15:15+00:00"
+        },
+        {
+            "name": "laravel/pint",
+            "version": "v1.21.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pint.git",
+                "reference": "531fa0871fbde719c51b12afa3a443b8f4e4b425"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/531fa0871fbde719c51b12afa3a443b8f4e4b425",
+                "reference": "531fa0871fbde719c51b12afa3a443b8f4e4b425",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -6403,6 +6851,7 @@
                 "ext-mbstring": "*",
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
+<<<<<<< HEAD
                 "php": "^8.1.0"
             },
             "require-dev": {
@@ -6412,6 +6861,17 @@
                 "laravel-zero/framework": "^10.48.25",
                 "mockery/mockery": "^1.6.12",
                 "nunomaduro/termwind": "^1.17.0",
+=======
+                "php": "^8.2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.68.5",
+                "illuminate/view": "^11.42.0",
+                "larastan/larastan": "^3.0.4",
+                "laravel-zero/framework": "^11.36.1",
+                "mockery/mockery": "^1.6.12",
+                "nunomaduro/termwind": "^2.3",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "pestphp/pest": "^2.36.0"
             },
             "bin": [
@@ -6448,6 +6908,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
+<<<<<<< HEAD
             "time": "2025-01-14T16:20:53+00:00"
         },
         {
@@ -6468,12 +6929,38 @@
                 "illuminate/console": "^9.52.16|^10.0|^11.0",
                 "illuminate/contracts": "^9.52.16|^10.0|^11.0",
                 "illuminate/support": "^9.52.16|^10.0|^11.0",
+=======
+            "time": "2025-02-18T03:18:57+00:00"
+        },
+        {
+            "name": "laravel/sail",
+            "version": "v1.41.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sail.git",
+                "reference": "fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec",
+                "reference": "fe1a4ada0abb5e4bd99eb4e4b0d87906c00cdeec",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.52.16|^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^9.52.16|^10.0|^11.0|^12.0",
+                "illuminate/support": "^9.52.16|^10.0|^11.0|^12.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "php": "^8.0",
                 "symfony/console": "^6.0|^7.0",
                 "symfony/yaml": "^6.0|^7.0"
             },
             "require-dev": {
+<<<<<<< HEAD
                 "orchestra/testbench": "^7.0|^8.0|^9.0",
+=======
+                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "phpstan/phpstan": "^1.10"
             },
             "bin": [
@@ -6511,7 +6998,11 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
+<<<<<<< HEAD
             "time": "2025-01-13T16:57:11+00:00"
+=======
+            "time": "2025-01-24T15:45:36+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "mockery/mockery",
@@ -6598,6 +7089,7 @@
         },
         {
             "name": "myclabs/deep-copy",
+<<<<<<< HEAD
             "version": "1.12.1",
             "source": {
                 "type": "git",
@@ -6608,6 +7100,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/123267b2c49fbf30d78a7b2d333f6be754b94845",
                 "reference": "123267b2c49fbf30d78a7b2d333f6be754b94845",
+=======
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/myclabs/DeepCopy.git",
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/024473a478be9df5fdaca2c793f2232fe788e414",
+                "reference": "024473a478be9df5fdaca2c793f2232fe788e414",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -6646,7 +7150,11 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/myclabs/DeepCopy/tree/1.12.1"
+=======
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.0"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -6654,6 +7162,7 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-11-08T17:47:46+00:00"
         },
         {
@@ -6668,10 +7177,27 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nunomaduro/collision/zipball/f5c101b929c958e849a633283adff296ed5f38f5",
                 "reference": "f5c101b929c958e849a633283adff296ed5f38f5",
+=======
+            "time": "2025-02-12T12:17:51+00:00"
+        },
+        {
+            "name": "nunomaduro/collision",
+            "version": "v8.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nunomaduro/collision.git",
+                "reference": "86f003c132143d5a2ab214e19933946409e0cae7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nunomaduro/collision/zipball/86f003c132143d5a2ab214e19933946409e0cae7",
+                "reference": "86f003c132143d5a2ab214e19933946409e0cae7",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
                 "filp/whoops": "^2.16.0",
+<<<<<<< HEAD
                 "nunomaduro/termwind": "^2.1.0",
                 "php": "^8.2.0",
                 "symfony/console": "^7.1.5"
@@ -6689,6 +7215,25 @@
                 "laravel/tinker": "^2.10.0",
                 "orchestra/testbench-core": "^9.5.3",
                 "pestphp/pest": "^2.36.0 || ^3.4.0",
+=======
+                "nunomaduro/termwind": "^2.3.0",
+                "php": "^8.2.0",
+                "symfony/console": "^7.2.1"
+            },
+            "conflict": {
+                "laravel/framework": "<11.39.1 || >=13.0.0",
+                "phpunit/phpunit": "<11.5.3 || >=12.0.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.9.12",
+                "laravel/framework": "^11.39.1",
+                "laravel/pint": "^1.20.0",
+                "laravel/sail": "^1.40.0",
+                "laravel/sanctum": "^4.0.7",
+                "laravel/tinker": "^2.10.0",
+                "orchestra/testbench-core": "^9.9.2",
+                "pestphp/pest": "^3.7.3",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "sebastian/environment": "^6.1.0 || ^7.2.0"
             },
             "type": "library",
@@ -6726,6 +7271,10 @@
                 "cli",
                 "command-line",
                 "console",
+<<<<<<< HEAD
+=======
+                "dev",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "error",
                 "handling",
                 "laravel",
@@ -6751,6 +7300,7 @@
                     "type": "patreon"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-10-15T16:06:32+00:00"
         },
         {
@@ -6765,11 +7315,31 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pestphp/pest/zipball/709ecb1ba2641fc0c4653ebe1fd8a402bbf4d18b",
                 "reference": "709ecb1ba2641fc0c4653ebe1fd8a402bbf4d18b",
+=======
+            "time": "2025-01-23T13:41:43+00:00"
+        },
+        {
+            "name": "pestphp/pest",
+            "version": "v3.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest.git",
+                "reference": "4a987d3d5c4e3ba36c76fecbf56113baac2d1b2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/4a987d3d5c4e3ba36c76fecbf56113baac2d1b2b",
+                "reference": "4a987d3d5c4e3ba36c76fecbf56113baac2d1b2b",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
                 "brianium/paratest": "^7.7.0",
+<<<<<<< HEAD
                 "nunomaduro/collision": "^8.5.0",
+=======
+                "nunomaduro/collision": "^8.6.1",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "nunomaduro/termwind": "^2.3.0",
                 "pestphp/pest-plugin": "^3.0.0",
                 "pestphp/pest-plugin-arch": "^3.0.0",
@@ -6851,7 +7421,11 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/pestphp/pest/tree/v3.7.2"
+=======
+                "source": "https://github.com/pestphp/pest/tree/v3.7.4"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -6863,7 +7437,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2025-01-19T17:35:09+00:00"
+=======
+            "time": "2025-01-23T14:03:29+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "pestphp/pest-plugin",
@@ -7007,6 +7585,7 @@
         },
         {
             "name": "pestphp/pest-plugin-laravel",
+<<<<<<< HEAD
             "version": "v3.0.0",
             "source": {
                 "type": "git",
@@ -7028,6 +7607,29 @@
                 "laravel/dusk": "^8.2.5",
                 "orchestra/testbench": "^9.4.0",
                 "pestphp/pest-dev-tools": "^3.0.0"
+=======
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest-plugin-laravel.git",
+                "reference": "1c4e994476375c72aa7aebaaa97aa98f5d5378cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-laravel/zipball/1c4e994476375c72aa7aebaaa97aa98f5d5378cd",
+                "reference": "1c4e994476375c72aa7aebaaa97aa98f5d5378cd",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^11.39.1|^12.0.0",
+                "pestphp/pest": "^3.7.4",
+                "php": "^8.2.0"
+            },
+            "require-dev": {
+                "laravel/dusk": "^8.2.13|dev-develop",
+                "orchestra/testbench": "^9.9.0|^10.0.0",
+                "pestphp/pest-dev-tools": "^3.3.0"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "type": "library",
             "extra": {
@@ -7065,7 +7667,11 @@
                 "unit"
             ],
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v3.0.0"
+=======
+                "source": "https://github.com/pestphp/pest-plugin-laravel/tree/v3.1.0"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -7077,7 +7683,11 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-09-08T23:32:52+00:00"
+=======
+            "time": "2025-01-24T13:22:39+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "pestphp/pest-plugin-mutate",
@@ -7446,6 +8056,7 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
+<<<<<<< HEAD
             "version": "2.0.0",
             "source": {
                 "type": "git",
@@ -7456,6 +8067,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/c00d78fb6b29658347f9d37ebe104bffadf36299",
                 "reference": "c00d78fb6b29658347f9d37ebe104bffadf36299",
+=======
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpstan/phpdoc-parser.git",
+                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
+                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -7487,9 +8110,15 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/phpstan/phpdoc-parser/tree/2.0.0"
             },
             "time": "2024-10-13T11:29:49+00:00"
+=======
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.1.0"
+            },
+            "time": "2025-02-19T13:28:12+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -8895,6 +9524,7 @@
         },
         {
             "name": "symfony/yaml",
+<<<<<<< HEAD
             "version": "v7.2.0",
             "source": {
                 "type": "git",
@@ -8905,6 +9535,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/yaml/zipball/099581e99f557e9f16b43c5916c26380b54abb22",
                 "reference": "099581e99f557e9f16b43c5916c26380b54abb22",
+=======
+            "version": "v7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "ac238f173df0c9c1120f862d0f599e17535a87ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ac238f173df0c9c1120f862d0f599e17535a87ec",
+                "reference": "ac238f173df0c9c1120f862d0f599e17535a87ec",
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
                 "shasum": ""
             },
             "require": {
@@ -8947,7 +9589,11 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
+<<<<<<< HEAD
                 "source": "https://github.com/symfony/yaml/tree/v7.2.0"
+=======
+                "source": "https://github.com/symfony/yaml/tree/v7.2.3"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
             },
             "funding": [
                 {
@@ -8963,7 +9609,11 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-10-23T06:56:12+00:00"
+=======
+            "time": "2025-01-07T12:55:42+00:00"
+>>>>>>> 4e47a79 (Updated Laravel and dependencies)
         },
         {
             "name": "ta-tikoma/phpunit-architecture-test",
