@@ -17,13 +17,15 @@ class UserController extends Controller
 
     public function store(StoreUserRequest $request)
     {
+        // dd($request->all());
         $validatedData = $request->validated();
-        User::create([
+       $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Hash::make($request->password)]);
-        session()->flash('success', 'You have successfully registered and logged in!');
-        return redirect()->route('index');
+            'password' => Hash::make($request->password),
+            'role' => $request->role]);
+        session()->flash('success', 'You have successfully registered');
+        return redirect()->route('register');
     }
     
     public function login(Request $request)

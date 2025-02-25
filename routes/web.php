@@ -61,29 +61,30 @@ Route::get('/groups/form', [GroupController::class, 'showGroupsForm'])->name('gr
 
 Route::post('/groups/calculate', [GroupController::class, 'calculateTotal'])->name('groups.calculate');
 //Sessions>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Route::post('/students/reset-payments', [StudentController::class, 'resetAllPayments'])->name('resetAllPayments');
+Route::put('/students/{id}', [StudentController::class, 'update'])->name('updateStudent');
 
 Route::get('/groups/{id}', [GroupController::class, 'showSessions']); 
 Route::post('/groups/{id}/update', [GroupController::class, 'updateSessions']);
 Route::post('/groups/{id}/reset', [GroupController::class, 'resetSessions'])->name('resetSessions');
 
+Route::post('/logout',[UserController::class , 'logout'])->name("logout");
+
+
+Route::get('/register', function () {
+    return view('register');
+})->middleware('register')->name("registerPage");
+
+Route::post('/register',[UserController::class , 'store'])->name("register");
 
 });
 
 
 //Authentication...................................................................
 
-Route::post('/logout',[UserController::class , 'logout'])->name("logout");
-
-Route::get('/register', function () {
-    return view('register');
-})->middleware('guest')->name("registerPage");
-
 
 Route::get('/login', function () {
     return view('login');
-})->name("loginPage");
-Route::post('/register',[UserController::class , 'store'])->name("register");
+})->middleware('guest')->name("loginPage");
 Route::post('/login',[UserController::class , 'login'])->name("login");
 
-Route::post('/students/reset-payments', [StudentController::class, 'resetAllPayments'])->name('resetAllPayments');
-Route::put('/students/{id}', [StudentController::class, 'update'])->name('updateStudent');

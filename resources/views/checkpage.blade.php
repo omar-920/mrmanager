@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +13,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f4f4f4;
+            padding: 20px;
         }
         table {
-            width: 1150px;
+            width: 100%;
+            max-width: 1150px;
             border-collapse: collapse;
             margin: 20px 0;
             background: white;
@@ -40,6 +43,7 @@
             background: white;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         input[type="checkbox"] {
             transform: scale(1.2);
@@ -54,9 +58,27 @@
             border-radius: 5px;
             cursor: pointer;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 200px;
         }
         .reset-button:hover {
             background-color: #0056b3;
+        }
+        .btn-danger {
+            width: 100%;
+            max-width: 200px;
+        }
+        @media (max-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+            th, td {
+                padding: 8px;
+            }
+            .reset-button, .btn-danger {
+                font-size: 14px;
+                padding: 8px;
+            }
         }
     </style>
 </head>
@@ -86,9 +108,9 @@
             @endfor
         </table>
 
-        <div class="counter">Number of Sessions: {{ $group->completed_sessions }}</span></div>
+        <div class="counter">Number of Sessions: <span id="count">{{ $group->completed_sessions }}</span></div>
 
-        <button type="submit" class="reset-button ">Save</button>
+        <button type="submit" class="reset-button">Save</button>
     </form>
 
     <!-- زر إعادة التعيين لإزالة جميع الحصص -->
@@ -96,7 +118,7 @@
         @csrf
         <button type="submit" class="btn btn-danger">Reset</button>
     </form>
-
+    <a href="{{route('index')}}">Return to main page</a>
     <script>
         // تحديث العدد عند تغيير الـ checkboxes
         document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
