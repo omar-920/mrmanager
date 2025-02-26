@@ -16,7 +16,7 @@ class StudentController extends Controller
     {
         $validated = $request->validate([
             'name' => 'required|string|max:255',
-            'group_id' => 'required|exists:groups,id',
+            'group_id' => 'exists:groups,id',
             'phone' => 'required|string|max:15',
             'parent_phone' => 'nullable|string|max:15',
             'note' => 'nullable|string',

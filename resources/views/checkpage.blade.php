@@ -85,7 +85,6 @@
 <body>
     <h2>Group: {{ $group->name }}</h2>
 
-    <!-- عرض رسالة نجاح -->
     @if(session('success'))
         <p style="color: red;">{{ session('success') }}</p>
     @endif
@@ -94,7 +93,7 @@
         @csrf
         <table>
             <tr>
-                <th>Option</th>
+                <th>Sessions</th>
                 <th>Check</th>
             </tr>
             @for ($i = 1; $i <= 8; $i++)
@@ -110,17 +109,15 @@
 
         <div class="counter">Number of Sessions: <span id="count">{{ $group->completed_sessions }}</span></div>
 
-        <button type="submit" class="reset-button">Save</button>
+        <button type="submit" class="reset-button mb-3">Save</button>
     </form>
 
-    <!-- زر إعادة التعيين لإزالة جميع الحصص -->
-    <form action="{{ url('/groups/' . $group->id . '/reset') }}" method="post">
+    <form action="{{ url('/groups/' . $group->id . '/reset') }}" method="post" class="mb-3 ">
         @csrf
-        <button type="submit" class="btn btn-danger">Reset</button>
+        <button type="submit" class="btn btn-danger w-100">Reset</button>
     </form>
     <a href="{{route('index')}}">Return to main page</a>
     <script>
-        // تحديث العدد عند تغيير الـ checkboxes
         document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 let count = document.querySelectorAll('input[type="checkbox"]:checked').length;

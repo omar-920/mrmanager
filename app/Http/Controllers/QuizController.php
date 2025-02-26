@@ -23,7 +23,7 @@ class QuizController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'total_score' => 'required|integer|min:1' ,
+            'total_score' => 'required|integer|min:1',
         ]);
 
         Quiz::create([
@@ -32,6 +32,13 @@ class QuizController extends Controller
         ]);
 
         return redirect()->route('quizzes.index')->with('success', 'تمت إضافة الكويز بنجاح!');
+    }
+
+    public function deleteQuiz($id)
+    {
+        $quiz = Quiz::findOrFail($id);
+        $quiz->delete();
+        return redirect()->route('quizzes.index')->with('success', 'Student deleted successfully!');
     }
 
 

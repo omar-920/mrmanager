@@ -75,11 +75,13 @@ Route::post('/logout',[UserController::class , 'logout'])->name("logout");
 //Student profile######################333
 Route::get('/students/{id}/profile', [StudentController::class, 'show'])->name('studentsProfile');
 
+//Qiezzes
 Route::get('/quizzes', [QuizController::class, 'index'])->name('quizzes.index');
 
 Route::get('/quizzes/create', [QuizController::class, 'create'])->name('quizzes.create');
 Route::post('/quizzes', [QuizController::class, 'store'])->name('quizzes.store');
 
+Route::delete('/quizzes/{id}/delete',[QuizController::class, 'deleteQuiz'])->name('quizzes.deleteQuiz');
 
 Route::get('/quizzes/{id}/scores', [QuizController::class, 'showScores'])->name('quizzes.showScores');
 Route::post('/quizzes/{id}/scores', [QuizController::class, 'storeScores'])->name('quizzes.storeScores');
