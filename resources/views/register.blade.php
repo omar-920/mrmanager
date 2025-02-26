@@ -12,7 +12,7 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-primary">
+<body class="bg-dark">
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
             <main>
@@ -54,11 +54,13 @@
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <select name="role">
-                                                    <option value="user">User</option>
-                                                    <option value="admin">Admin</option>
+                                                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="role">
+                                                  <option selected>Open this select menu</option>
+                                                  <option value="user">User</option>
+                                                  <option value="admin">Admin</option>
                                                 </select>
-                                            </div>
+                                                <label for="floatingSelect">Works with selects</label>
+                                              </div>
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
@@ -78,12 +80,12 @@
                                             </div>
                                             <div class="mt-4 mb-0">
                                                 <div class="d-grid"><button type="submit"
-                                                        class="btn btn-primary btn-block">Create Account</button></div>
+                                                        class="btn btn-dark btn-block">Create Account</button></div>
                                             </div>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    <div class="small"><a href="{{ route('index') }}">Back To Main Page</a></div>
+                                    <div class="small"><a href="{{ url('/teachers') }}">Back To Main Page</a></div>
                                 </div>
                             </div>
                         </div>

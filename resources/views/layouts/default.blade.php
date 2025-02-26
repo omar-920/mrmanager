@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard - SB Admin</title>
+    <title>MR MANAGER</title>
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <!-- <link href="" rel="stylesheet" /> -->
     @vite('resources/css/styles.css')
@@ -162,6 +162,18 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Core</div>
+                        @if (Auth::user()->role == 'admin')
+                        
+                        <a class="nav-link active" href="{{ route('getTeachers') }}">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Teachers
+                        </a>
+                        <a class="nav-link" href="{{ route('registerPage') }}">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Register Users
+                        </a>
+
+                        @else
                         <a class="nav-link" href="{{ route('index') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
@@ -170,16 +182,20 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Students
                         </a>
+                        <a class="nav-link" href="{{ route('quizzes.index') }}">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Quizzes
+                        </a>
                         <a class="nav-link" href="{{ route('groups.form') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Payments
                         </a>
+                        @endif
+                        
+                        
 
                         @if (auth()->check() && auth()->user()->role === 'admin')
-                            <a class="nav-link" href="{{ route('registerPage') }}">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Register Users
-                            </a>
+                            
                         @endif
                     </div>
                 </div>
@@ -202,7 +218,7 @@
 
         <div id="layoutSidenav_content">
             {{-- Main --}}
-            <main class="m-5">
+            <main class="">
                 @yield('main')
                 {{-- End Main --}}
             </main>

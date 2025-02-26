@@ -1,10 +1,12 @@
 <?php
 
 use App\Http\Controllers\GroupController;
+use App\Http\Controllers\QuizController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\UserController;
 use App\Models\Group;
 use App\Models\Student;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -70,13 +72,30 @@ Route::post('/groups/{id}/reset', [GroupController::class, 'resetSessions'])->na
 
 Route::post('/logout',[UserController::class , 'logout'])->name("logout");
 
+//Student profile######################333
+Route::get('/students/{id}/profile', [StudentController::class, 'show'])->name('studentsProfile');
+
+Route::get('/quizzes', [QuizController::class, 'index'])->name('quizzes.index');
+
+Route::get('/quizzes/create', [QuizController::class, 'create'])->name('quizzes.create');
+Route::post('/quizzes', [QuizController::class, 'store'])->name('quizzes.store');
+
+
+Route::get('/quizzes/{id}/scores', [QuizController::class, 'showScores'])->name('quizzes.showScores');
+Route::post('/quizzes/{id}/scores', [QuizController::class, 'storeScores'])->name('quizzes.storeScores');
+
+//Admin####################################################################
+
+Route::middleware('Admin')->group(function(){
 
 Route::get('/register', function () {
     return view('register');
-})->middleware('register')->name("registerPage");
-
+})->name("registerPage");
 Route::post('/register',[UserController::class , 'store'])->name("register");
-
+Route::get('/teachers',[UserController::class, 'getTeachers'])->name('getTeachers');
+Route::put('/teacher/{id}/edit',[UserController::class,'update'])->name('update.teacher');
+Route::delete('/teacher/{id}/delete',[UserController::class,'destroy'])->name('destroy.teacher');
+});
 });
 
 

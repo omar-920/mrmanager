@@ -1,4 +1,3 @@
-
 @extends('layouts.default')
 
 @section('main')
@@ -6,7 +5,7 @@
     <h1 class="mt-4">Students</h1>
     <ol class="breadcrumb mb-4">
         @if (session('success'))
-            <div class="alert alert-success m-5" id="success-message">
+            <div class="alert alert-success" id="success-message">
                 {{ session('success') }}
             </div>
         @endif
@@ -18,15 +17,12 @@
         <div class="card mb-4">
             <div class="card-body">
                 <div class="datatable-container">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-bordered">
                         <thead>
                             <tr>
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Group Name</th>
-                                <th>Phone</th>
-                                <th>Parent Phone</th>
-                                <th>Withdraw Status</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -38,22 +34,9 @@
                                     <td>
                                         {{ $student->group ? $student->group->name : 'No Group' }}
                                     </td>
-                                    <td>{{ $student->phone }}</td>
-                                    <td>{{ $student->parent_phone }}</td>
-                                    <td>
-                                        @if($student->status == 'unpaid')
-                                            <a href="{{ route('payStudent', $student->id) }}" class="btn btn-success btn-sm">Pay</a>
-                                        @else
-                                            <span>
-                                                @if($student->status == 'paid' && $student->paid_at)
-                                                    ({{ \Carbon\Carbon::parse($student->paid_at)->format('Y-m-d') }})
-                                                @elseif($student->status == 'paid' && !$student->paid_at)
-                                                    (Paid status is set, but no date available.)
-                                                @endif
-                                            </span>
-                                        @endif
-                                    </td>
                                     <td class="actions">
+                                       <div class="d-flex flex-column flex-md-row gap-2">
+                                        <a href="{{ route('studentsProfile', $student->id) }}" class="btn btn-secondary">Profile</a>
                                         <a class="btn btn-primary btn-sm" href="">Edit</a>
                                         @if ($student->status == "paid")
                                             <a href="" class="btn btn-secondary btn-sm disabled">Paid</a>
@@ -85,6 +68,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                       </div>
                                     </td>
                                 </tr>
                             @endforeach

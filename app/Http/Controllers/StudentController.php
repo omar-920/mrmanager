@@ -66,7 +66,12 @@ public function destroy($id)
 
     return redirect()->route('groups')->with('success', 'Student deleted successfully!');
 }
+public function show($id)
+{
+    $student = Student::with(['quizScores.quiz'])->findOrFail($id);
 
+    return view('studentProfile', compact('student'));
+}
 public function payStudent($id)
 {
     $student = Student::findOrFail($id);

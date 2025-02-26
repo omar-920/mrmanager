@@ -73,10 +73,6 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Group Name</th>
-                                <th>Phone</th>
-                                <th>Parent Phone</th>
-                                <th>Notes</th>
-                                <th>Withdraw Status</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -86,24 +82,11 @@
                                     <td>{{ $student->id }}</td>
                                     <td>{{ $student->name }}</td>
                                     <td>{{ $student->group ? $student->group->name : 'No Group' }}</td>
-                                    <td>{{ $student->phone }}</td>
-                                    <td>{{ $student->parent_phone }}</td>
-                                    <td>{{ $student->note }}</td>
-                                    <td>
-                                        @if ($student->status == 'unpaid')
-                                            <a href="{{ route('payStudent', $student->id) }}"
-                                                class="btn btn-success btn-sm">Pay</a>
-                                        @else
-                                            <span>
-                                                @if ($student->status == 'paid' && $student->paid_at)
-                                                    ({{ \Carbon\Carbon::parse($student->paid_at)->format('Y-m-d') }})
-                                                @elseif($student->status == 'paid' && !$student->paid_at)
-                                                    (Paid status is set, but no date available.)
-                                                @endif
-                                            </span>
-                                        @endif
-                                    </td>
+                                    
                                     <td class="actions">
+                                        <div class="d-flex flex-column flex-md-row gap-2">
+                                            <a href="{{ route('studentsProfile', $student->id) }}" class="btn btn-secondary">Profile</a>
+
                                         <button type="button" class="btn btn-primary btn-sm mx-1" data-toggle="modal"
                                             data-target="#myModal{{ $student->id }}">
                                             Edit
@@ -204,6 +187,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach
